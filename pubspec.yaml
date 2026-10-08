@@ -23,7 +23,7 @@ dependencies:
 
   # PDF & Printing
   pdf: ^3.10.8
-  printing: ^5.11.1
+  printing: ^5.14.0
 
   # UI & Design
   google_fonts: ^6.2.1
