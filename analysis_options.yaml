@@ -1,0 +1,33 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - build/**
+    - lib/**.g.dart
+    - .dart_tool/**
+    - packages/**
+    - ios/**
+    - android/**
+    - windows/**
+    - linux/**
+    - macos/**
+
+  errors:
+    deprecated_member_use: ignore
+    deprecated_member_use_from_same_package: ignore
+    library_private_types_in_public_api: ignore
+    overridden_fields: ignore
+    prefer_const_constructors: ignore
+
+linter:
+  rules:
+    # const related
+    prefer_const_constructors: false
+    prefer_const_literals_to_create_immutables: false
+    unnecessary_const: false
+
+    # style / legacy
+    annotate_overrides: false
+    curly_braces_in_flow_control_structures: false
+    sized_box_for_whitespace: false
+    unnecessary_new: false

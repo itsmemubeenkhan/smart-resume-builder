@@ -1,0 +1,66 @@
+name: ai_resume_builder
+description: "AI Resume Builder & Job Tracker Application"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+
+  # Local Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Navigation
+  go_router: ^13.2.0
+
+  # PDF & Printing
+  pdf: ^3.10.8
+  printing: ^5.11.1
+
+  # UI & Design
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.0
+  cupertino_icons: ^1.0.6
+
+  # Utilities
+  uuid: ^4.4.0
+  intl: ^0.19.0
+  path_provider: ^2.1.2
+  share_plus: ^9.0.0
+  open_filex: ^4.6.0   # ✅ FIXED
+  json_annotation: ^4.8.1
+  in_app_purchase: ^3.2.3
+  image_picker: ^1.2.1
+
+  # Ads
+  google_mobile_ads: ^5.0.0
+  facebook_audience_network:
+    path: ./packages/facebook_audience_network
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.2
+  build_runner: ^2.4.8
+  riverpod_generator: ^2.4.0
+  hive_generator: ^2.0.1
+  json_serializable: ^6.7.1
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
