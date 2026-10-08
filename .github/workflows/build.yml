@@ -21,9 +21,19 @@ jobs:
         run: flutter pub get
 
       - name: Build release AAB
+        env:
+          KEYSTORE_PATH: ${{ github.workspace }}/android/keystore/release.jks
+          KEYSTORE_PASSWORD: smartresume2026
+          KEY_ALIAS: smart-resume
+          KEY_PASSWORD: smartresume2026
         run: flutter build appbundle --release --no-tree-shake-icons
 
       - name: Build release APK
+        env:
+          KEYSTORE_PATH: ${{ github.workspace }}/android/keystore/release.jks
+          KEYSTORE_PASSWORD: smartresume2026
+          KEY_ALIAS: smart-resume
+          KEY_PASSWORD: smartresume2026
         run: flutter build apk --release --no-tree-shake-icons
 
       - name: Upload AAB
