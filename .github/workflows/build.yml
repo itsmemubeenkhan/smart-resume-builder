@@ -21,10 +21,10 @@ jobs:
         run: flutter pub get
 
       - name: Build release AAB
-        run: flutter build appbundle --release
+        run: flutter build appbundle --release --no-tree-shake-icons
 
       - name: Build release APK
-        run: flutter build apk --release
+        run: flutter build apk --release --no-tree-shake-icons
 
       - name: Upload AAB
         uses: actions/upload-artifact@v4
